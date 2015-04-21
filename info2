@@ -1,0 +1,110 @@
+echo "# This is a generated file, composed of the following suppression rules:" > default.supp
+echo "# " xfree-3.supp xfree-4.supp glibc-2.X.supp  >> default.supp
+cat xfree-3.supp xfree-4.supp glibc-2.X.supp  >> default.supp
+make  all-recursive
+make[1]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1'
+Making all in include
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/include'
+make[2]: 没有什么可以做的为 `all'。
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/include'
+Making all in VEX
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+make  all-am
+make[3]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+make[3]: 没有什么可以做的为 `all-am'。
+make[3]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+Making all in coregrind
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+make  all-am
+make[3]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+mkdir -p ../.in_place; \
+	for f in vgpreload_core-amd64-linux.so  ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../coregrind/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../coregrind/$f.dSYM ../.in_place; \
+	done
+mkdir -p ../.in_place; \
+	for f in m_gdbserver/32bit-core-valgrind-s1.xml m_gdbserver/32bit-core-valgrind-s2.xml m_gdbserver/32bit-core.xml m_gdbserver/32bit-linux-valgrind-s1.xml m_gdbserver/32bit-linux-valgrind-s2.xml m_gdbserver/32bit-linux.xml m_gdbserver/32bit-sse-valgrind-s1.xml m_gdbserver/32bit-sse-valgrind-s2.xml m_gdbserver/32bit-sse.xml m_gdbserver/64bit-avx-valgrind-s2.xml m_gdbserver/64bit-avx-valgrind-s1.xml m_gdbserver/64bit-avx.xml m_gdbserver/64bit-core-valgrind-s1.xml m_gdbserver/64bit-core-valgrind-s2.xml m_gdbserver/64bit-core.xml m_gdbserver/64bit-linux-valgrind-s1.xml m_gdbserver/64bit-linux-valgrind-s2.xml m_gdbserver/64bit-linux.xml m_gdbserver/64bit-sse-valgrind-s1.xml m_gdbserver/64bit-sse-valgrind-s2.xml m_gdbserver/64bit-sse.xml m_gdbserver/amd64-avx-coresse-valgrind.xml m_gdbserver/amd64-avx-coresse.xml m_gdbserver/amd64-avx-linux-valgrind.xml m_gdbserver/amd64-avx-linux.xml m_gdbserver/amd64-coresse-valgrind.xml m_gdbserver/amd64-linux-valgrind.xml m_gdbserver/arm-core-valgrind-s1.xml m_gdbserver/arm-core-valgrind-s2.xml m_gdbserver/arm-core.xml m_gdbserver/arm-vfpv3-valgrind-s1.xml m_gdbserver/arm-vfpv3-valgrind-s2.xml m_gdbserver/arm-vfpv3.xml m_gdbserver/arm-with-vfpv3-valgrind.xml m_gdbserver/arm-with-vfpv3.xml m_gdbserver/i386-coresse-valgrind.xml m_gdbserver/i386-linux-valgrind.xml m_gdbserver/power64-core-valgrind-s1.xml m_gdbserver/power64-core-valgrind-s2.xml m_gdbserver/power64-core.xml m_gdbserver/power64-linux-valgrind-s1.xml m_gdbserver/power64-linux-valgrind-s2.xml m_gdbserver/power64-linux.xml m_gdbserver/power-altivec-valgrind-s1.xml m_gdbserver/power-altivec-valgrind-s2.xml m_gdbserver/power-altivec.xml m_gdbserver/power-core-valgrind-s1.xml m_gdbserver/power-core-valgrind-s2.xml m_gdbserver/power-core.xml m_gdbserver/power-fpu-valgrind-s1.xml m_gdbserver/power-fpu-valgrind-s2.xml m_gdbserver/power-fpu.xml m_gdbserver/power-linux-valgrind-s1.xml m_gdbserver/power-linux-valgrind-s2.xml m_gdbserver/power-linux.xml m_gdbserver/powerpc-altivec32l-valgrind.xml m_gdbserver/powerpc-altivec32l.xml m_gdbserver/powerpc-altivec64l-valgrind.xml m_gdbserver/powerpc-altivec64l.xml m_gdbserver/s390-acr-valgrind-s1.xml m_gdbserver/s390-acr-valgrind-s2.xml m_gdbserver/s390-acr.xml m_gdbserver/s390-fpr-valgrind-s1.xml m_gdbserver/s390-fpr-valgrind-s2.xml m_gdbserver/s390-fpr.xml m_gdbserver/s390x-core64-valgrind-s1.xml m_gdbserver/s390x-core64-valgrind-s2.xml m_gdbserver/s390x-core64.xml m_gdbserver/s390x-generic-valgrind.xml m_gdbserver/s390x-generic.xml m_gdbserver/s390x-linux64-valgrind-s1.xml m_gdbserver/s390x-linux64-valgrind-s2.xml m_gdbserver/s390x-linux64.xml m_gdbserver/mips-cp0-valgrind-s1.xml m_gdbserver/mips-cp0-valgrind-s2.xml m_gdbserver/mips-cp0.xml m_gdbserver/mips-cpu-valgrind-s1.xml m_gdbserver/mips-cpu-valgrind-s2.xml m_gdbserver/mips-cpu.xml m_gdbserver/mips-linux.xml m_gdbserver/mips-linux-valgrind.xml m_gdbserver/mips-fpu-valgrind-s1.xml m_gdbserver/mips-fpu-valgrind-s2.xml m_gdbserver/mips-fpu.xml; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../coregrind/$f ../.in_place; \
+	done
+make[3]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+Making all in .
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1'
+mkdir -p ./.in_place
+rm -f ./.in_place/default.supp
+ln -s ../default.supp ./.in_place
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1'
+Making all in memcheck
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/memcheck'
+mkdir -p ../.in_place; \
+	for f in memcheck-amd64-linux  vgpreload_memcheck-amd64-linux.so  ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../memcheck/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../memcheck/$f.dSYM ../.in_place; \
+	done
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/memcheck'
+Making all in memtrace
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/memtrace'
+mkdir -p ../.in_place; \
+	for f in memtrace-amd64-linux  ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../memtrace/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../memtrace/$f.dSYM ../.in_place; \
+	done
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/memtrace'
+Making all in sconvcheck
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/sconvcheck'
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -DVGA_amd64=1 -DVGO_linux=1 -DVGP_amd64_linux=1 -DVGPV_amd64_linux_vanilla=1  -m64 -O2 -g -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wno-format-zero-length -fno-strict-aliasing -fno-builtin -fomit-frame-pointer -Wno-long-long  -Wno-pointer-sign -fno-stack-protector -MT sconvcheck_amd64_linux-sc_main.o -MD -MP -MF .deps/sconvcheck_amd64_linux-sc_main.Tpo -c -o sconvcheck_amd64_linux-sc_main.o `test -f 'sc_main.c' || echo './'`sc_main.c
+mv -f .deps/sconvcheck_amd64_linux-sc_main.Tpo .deps/sconvcheck_amd64_linux-sc_main.Po
+../coregrind/link_tool_exe_linux 0x38000000 gcc  -Wno-long-long  -Wno-pointer-sign -fno-stack-protector   -o sconvcheck-amd64-linux -m64 -O2 -g -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wno-format-zero-length -fno-strict-aliasing -fno-builtin -fomit-frame-pointer -static -nodefaultlibs -nostartfiles -u _start -Wl,--build-id=none -m64 sconvcheck_amd64_linux-sc_main.o sconvcheck_amd64_linux-symtrace.o sconvcheck_amd64_linux-sc_malloc_wrappers.o ../coregrind/libcoregrind-amd64-linux.a ../VEX/libvex-amd64-linux.a -lgcc 
+mkdir -p ../.in_place; \
+	for f in sconvcheck-amd64-linux  vgpreload_sconvcheck-amd64-linux.so  ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../sconvcheck/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../sconvcheck/$f.dSYM ../.in_place; \
+	done
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/sconvcheck'
+make[1]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1'

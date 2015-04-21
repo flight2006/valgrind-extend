@@ -1,0 +1,4 @@
+libcoregrind_arm_linux_a-mach_msg.o: m_mach/mach_msg.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

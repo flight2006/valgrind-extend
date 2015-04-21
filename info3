@@ -1,0 +1,203 @@
+make  install-recursive
+make[1]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1'
+Making install in include
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/include'
+make[3]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/include'
+make[3]: 没有什么可以做的为 `install-exec-am'。
+test -z "/home/seryna/下载/valgrind-3.8.1/build/include/valgrind" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/include/valgrind"
+/bin/mkdir -p '/home/seryna/下载/valgrind-3.8.1/build/include/valgrind/vki'
+ /usr/bin/install -c -m 644  vki/vki-linux.h vki/vki-darwin.h vki/vki-posixtypes-amd64-linux.h vki/vki-posixtypes-ppc32-linux.h vki/vki-posixtypes-ppc64-linux.h vki/vki-posixtypes-x86-linux.h vki/vki-posixtypes-arm-linux.h vki/vki-posixtypes-s390x-linux.h vki/vki-posixtypes-mips32-linux.h vki/vki-amd64-linux.h vki/vki-ppc32-linux.h vki/vki-ppc64-linux.h vki/vki-x86-linux.h vki/vki-arm-linux.h vki/vki-s390x-linux.h vki/vki-mips32-linux.h vki/vki-scnums-amd64-linux.h vki/vki-scnums-ppc32-linux.h vki/vki-scnums-ppc64-linux.h vki/vki-scnums-x86-linux.h vki/vki-scnums-arm-linux.h vki/vki-scnums-s390x-linux.h vki/vki-scnums-mips32-linux.h vki/vki-scnums-darwin.h '/home/seryna/下载/valgrind-3.8.1/build/include/valgrind/vki'
+ /usr/bin/install -c -m 644  pub_tool_basics.h pub_tool_basics_asm.h pub_tool_aspacehl.h pub_tool_aspacemgr.h pub_tool_clientstate.h pub_tool_clreq.h pub_tool_cpuid.h pub_tool_debuginfo.h pub_tool_errormgr.h pub_tool_execontext.h pub_tool_gdbserver.h pub_tool_poolalloc.h pub_tool_hashtable.h pub_tool_inner.h pub_tool_libcbase.h pub_tool_libcassert.h pub_tool_libcfile.h pub_tool_libcprint.h pub_tool_libcproc.h pub_tool_libcsetjmp.h pub_tool_libcsignal.h pub_tool_machine.h pub_tool_mallocfree.h pub_tool_options.h pub_tool_oset.h pub_tool_redir.h pub_tool_replacemalloc.h pub_tool_seqmatch.h pub_tool_signals.h pub_tool_sparsewa.h pub_tool_stacktrace.h pub_tool_threadstate.h pub_tool_tooliface.h pub_tool_vki.h pub_tool_vkiscnums.h pub_tool_vkiscnums_asm.h pub_tool_wordfm.h pub_tool_xarray.h valgrind.h '/home/seryna/下载/valgrind-3.8.1/build/include/valgrind/.'
+make[3]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/include'
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/include'
+Making install in VEX
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+make  install-am
+make[3]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+make[4]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+test -z "/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind"
+ /usr/bin/install -c -m 644  libvex-amd64-linux.a '/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind'
+ ( cd '/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind' && ranlib libvex-amd64-linux.a )
+test -z "/home/seryna/下载/valgrind-3.8.1/build/include/valgrind" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/include/valgrind"
+ /usr/bin/install -c -m 644 pub/libvex.h pub/libvex_basictypes.h pub/libvex_emwarn.h pub/libvex_guest_offsets.h pub/libvex_guest_x86.h pub/libvex_guest_amd64.h pub/libvex_guest_ppc32.h pub/libvex_guest_ppc64.h pub/libvex_guest_arm.h pub/libvex_guest_s390x.h pub/libvex_guest_mips32.h pub/libvex_s390x_common.h pub/libvex_ir.h pub/libvex_trc_values.h '/home/seryna/下载/valgrind-3.8.1/build/include/valgrind'
+make[4]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+make[3]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/VEX'
+Making install in coregrind
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+make  install-am
+make[3]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+mkdir -p ../.in_place; \
+	for f in vgpreload_core-amd64-linux.so  ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../coregrind/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../coregrind/$f.dSYM ../.in_place; \
+	done
+mkdir -p ../.in_place; \
+	for f in m_gdbserver/32bit-core-valgrind-s1.xml m_gdbserver/32bit-core-valgrind-s2.xml m_gdbserver/32bit-core.xml m_gdbserver/32bit-linux-valgrind-s1.xml m_gdbserver/32bit-linux-valgrind-s2.xml m_gdbserver/32bit-linux.xml m_gdbserver/32bit-sse-valgrind-s1.xml m_gdbserver/32bit-sse-valgrind-s2.xml m_gdbserver/32bit-sse.xml m_gdbserver/64bit-avx-valgrind-s2.xml m_gdbserver/64bit-avx-valgrind-s1.xml m_gdbserver/64bit-avx.xml m_gdbserver/64bit-core-valgrind-s1.xml m_gdbserver/64bit-core-valgrind-s2.xml m_gdbserver/64bit-core.xml m_gdbserver/64bit-linux-valgrind-s1.xml m_gdbserver/64bit-linux-valgrind-s2.xml m_gdbserver/64bit-linux.xml m_gdbserver/64bit-sse-valgrind-s1.xml m_gdbserver/64bit-sse-valgrind-s2.xml m_gdbserver/64bit-sse.xml m_gdbserver/amd64-avx-coresse-valgrind.xml m_gdbserver/amd64-avx-coresse.xml m_gdbserver/amd64-avx-linux-valgrind.xml m_gdbserver/amd64-avx-linux.xml m_gdbserver/amd64-coresse-valgrind.xml m_gdbserver/amd64-linux-valgrind.xml m_gdbserver/arm-core-valgrind-s1.xml m_gdbserver/arm-core-valgrind-s2.xml m_gdbserver/arm-core.xml m_gdbserver/arm-vfpv3-valgrind-s1.xml m_gdbserver/arm-vfpv3-valgrind-s2.xml m_gdbserver/arm-vfpv3.xml m_gdbserver/arm-with-vfpv3-valgrind.xml m_gdbserver/arm-with-vfpv3.xml m_gdbserver/i386-coresse-valgrind.xml m_gdbserver/i386-linux-valgrind.xml m_gdbserver/power64-core-valgrind-s1.xml m_gdbserver/power64-core-valgrind-s2.xml m_gdbserver/power64-core.xml m_gdbserver/power64-linux-valgrind-s1.xml m_gdbserver/power64-linux-valgrind-s2.xml m_gdbserver/power64-linux.xml m_gdbserver/power-altivec-valgrind-s1.xml m_gdbserver/power-altivec-valgrind-s2.xml m_gdbserver/power-altivec.xml m_gdbserver/power-core-valgrind-s1.xml m_gdbserver/power-core-valgrind-s2.xml m_gdbserver/power-core.xml m_gdbserver/power-fpu-valgrind-s1.xml m_gdbserver/power-fpu-valgrind-s2.xml m_gdbserver/power-fpu.xml m_gdbserver/power-linux-valgrind-s1.xml m_gdbserver/power-linux-valgrind-s2.xml m_gdbserver/power-linux.xml m_gdbserver/powerpc-altivec32l-valgrind.xml m_gdbserver/powerpc-altivec32l.xml m_gdbserver/powerpc-altivec64l-valgrind.xml m_gdbserver/powerpc-altivec64l.xml m_gdbserver/s390-acr-valgrind-s1.xml m_gdbserver/s390-acr-valgrind-s2.xml m_gdbserver/s390-acr.xml m_gdbserver/s390-fpr-valgrind-s1.xml m_gdbserver/s390-fpr-valgrind-s2.xml m_gdbserver/s390-fpr.xml m_gdbserver/s390x-core64-valgrind-s1.xml m_gdbserver/s390x-core64-valgrind-s2.xml m_gdbserver/s390x-core64.xml m_gdbserver/s390x-generic-valgrind.xml m_gdbserver/s390x-generic.xml m_gdbserver/s390x-linux64-valgrind-s1.xml m_gdbserver/s390x-linux64-valgrind-s2.xml m_gdbserver/s390x-linux64.xml m_gdbserver/mips-cp0-valgrind-s1.xml m_gdbserver/mips-cp0-valgrind-s2.xml m_gdbserver/mips-cp0.xml m_gdbserver/mips-cpu-valgrind-s1.xml m_gdbserver/mips-cpu-valgrind-s2.xml m_gdbserver/mips-cpu.xml m_gdbserver/mips-linux.xml m_gdbserver/mips-linux-valgrind.xml m_gdbserver/mips-fpu-valgrind-s1.xml m_gdbserver/mips-fpu-valgrind-s2.xml m_gdbserver/mips-fpu.xml; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../coregrind/$f ../.in_place; \
+	done
+make[4]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+test -z "/home/seryna/下载/valgrind-3.8.1/build/bin" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/bin"
+  /usr/bin/install -c valgrind vgdb '/home/seryna/下载/valgrind-3.8.1/build/bin'
+/bin/bash /home/seryna/下载/valgrind-3.8.1/install-sh -d /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	for f in vgpreload_core-amd64-linux.so ; do \
+	  /usr/bin/install -c $f /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/bash /home/seryna/下载/valgrind-3.8.1/install-sh -d /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	done
+test -z "/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind"
+ /usr/bin/install -c -m 644  libcoregrind-amd64-linux.a libreplacemalloc_toolpreload-amd64-linux.a '/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind'
+ ( cd '/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind' && ranlib libcoregrind-amd64-linux.a )
+ ( cd '/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind' && ranlib libreplacemalloc_toolpreload-amd64-linux.a )
+test -z "/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind"
+ /usr/bin/install -c -m 644 m_gdbserver/32bit-core-valgrind-s1.xml m_gdbserver/32bit-core-valgrind-s2.xml m_gdbserver/32bit-core.xml m_gdbserver/32bit-linux-valgrind-s1.xml m_gdbserver/32bit-linux-valgrind-s2.xml m_gdbserver/32bit-linux.xml m_gdbserver/32bit-sse-valgrind-s1.xml m_gdbserver/32bit-sse-valgrind-s2.xml m_gdbserver/32bit-sse.xml m_gdbserver/64bit-avx-valgrind-s2.xml m_gdbserver/64bit-avx-valgrind-s1.xml m_gdbserver/64bit-avx.xml m_gdbserver/64bit-core-valgrind-s1.xml m_gdbserver/64bit-core-valgrind-s2.xml m_gdbserver/64bit-core.xml m_gdbserver/64bit-linux-valgrind-s1.xml m_gdbserver/64bit-linux-valgrind-s2.xml m_gdbserver/64bit-linux.xml m_gdbserver/64bit-sse-valgrind-s1.xml m_gdbserver/64bit-sse-valgrind-s2.xml m_gdbserver/64bit-sse.xml m_gdbserver/amd64-avx-coresse-valgrind.xml m_gdbserver/amd64-avx-coresse.xml m_gdbserver/amd64-avx-linux-valgrind.xml m_gdbserver/amd64-avx-linux.xml m_gdbserver/amd64-coresse-valgrind.xml m_gdbserver/amd64-linux-valgrind.xml m_gdbserver/arm-core-valgrind-s1.xml m_gdbserver/arm-core-valgrind-s2.xml m_gdbserver/arm-core.xml m_gdbserver/arm-vfpv3-valgrind-s1.xml m_gdbserver/arm-vfpv3-valgrind-s2.xml m_gdbserver/arm-vfpv3.xml m_gdbserver/arm-with-vfpv3-valgrind.xml m_gdbserver/arm-with-vfpv3.xml m_gdbserver/i386-coresse-valgrind.xml m_gdbserver/i386-linux-valgrind.xml m_gdbserver/power64-core-valgrind-s1.xml m_gdbserver/power64-core-valgrind-s2.xml m_gdbserver/power64-core.xml '/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind'
+ /usr/bin/install -c -m 644 m_gdbserver/power64-linux-valgrind-s1.xml m_gdbserver/power64-linux-valgrind-s2.xml m_gdbserver/power64-linux.xml m_gdbserver/power-altivec-valgrind-s1.xml m_gdbserver/power-altivec-valgrind-s2.xml m_gdbserver/power-altivec.xml m_gdbserver/power-core-valgrind-s1.xml m_gdbserver/power-core-valgrind-s2.xml m_gdbserver/power-core.xml m_gdbserver/power-fpu-valgrind-s1.xml m_gdbserver/power-fpu-valgrind-s2.xml m_gdbserver/power-fpu.xml m_gdbserver/power-linux-valgrind-s1.xml m_gdbserver/power-linux-valgrind-s2.xml m_gdbserver/power-linux.xml m_gdbserver/powerpc-altivec32l-valgrind.xml m_gdbserver/powerpc-altivec32l.xml m_gdbserver/powerpc-altivec64l-valgrind.xml m_gdbserver/powerpc-altivec64l.xml m_gdbserver/s390-acr-valgrind-s1.xml m_gdbserver/s390-acr-valgrind-s2.xml m_gdbserver/s390-acr.xml m_gdbserver/s390-fpr-valgrind-s1.xml m_gdbserver/s390-fpr-valgrind-s2.xml m_gdbserver/s390-fpr.xml m_gdbserver/s390x-core64-valgrind-s1.xml m_gdbserver/s390x-core64-valgrind-s2.xml m_gdbserver/s390x-core64.xml m_gdbserver/s390x-generic-valgrind.xml m_gdbserver/s390x-generic.xml m_gdbserver/s390x-linux64-valgrind-s1.xml m_gdbserver/s390x-linux64-valgrind-s2.xml m_gdbserver/s390x-linux64.xml m_gdbserver/mips-cp0-valgrind-s1.xml m_gdbserver/mips-cp0-valgrind-s2.xml m_gdbserver/mips-cp0.xml m_gdbserver/mips-cpu-valgrind-s1.xml m_gdbserver/mips-cpu-valgrind-s2.xml m_gdbserver/mips-cpu.xml m_gdbserver/mips-linux.xml '/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind'
+ /usr/bin/install -c -m 644 m_gdbserver/mips-linux-valgrind.xml m_gdbserver/mips-fpu-valgrind-s1.xml m_gdbserver/mips-fpu-valgrind-s2.xml m_gdbserver/mips-fpu.xml '/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind'
+make[4]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+make[3]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/coregrind'
+Making install in .
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1'
+mkdir -p ./.in_place
+rm -f ./.in_place/default.supp
+ln -s ../default.supp ./.in_place
+make[3]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1'
+make[3]: 没有什么可以做的为 `install-exec-am'。
+test -z "/home/seryna/下载/valgrind-3.8.1/build/lib/pkgconfig" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/lib/pkgconfig"
+ /usr/bin/install -c -m 644 valgrind.pc '/home/seryna/下载/valgrind-3.8.1/build/lib/pkgconfig'
+test -z "/home/seryna/下载/valgrind-3.8.1/build/include/valgrind" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/include/valgrind"
+ /usr/bin/install -c -m 644 config.h '/home/seryna/下载/valgrind-3.8.1/build/include/valgrind'
+test -z "/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind"
+ /usr/bin/install -c -m 644 default.supp '/home/seryna/下载/valgrind-3.8.1/build/lib/valgrind'
+make[3]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1'
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1'
+Making install in memcheck
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/memcheck'
+mkdir -p ../.in_place; \
+	for f in memcheck-amd64-linux  vgpreload_memcheck-amd64-linux.so  ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../memcheck/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../memcheck/$f.dSYM ../.in_place; \
+	done
+make[3]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/memcheck'
+/bin/bash /home/seryna/下载/valgrind-3.8.1/install-sh -d /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	for f in memcheck-amd64-linux  vgpreload_memcheck-amd64-linux.so ; do \
+	  /usr/bin/install -c $f /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/bash /home/seryna/下载/valgrind-3.8.1/install-sh -d /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	done
+test -z "/home/seryna/下载/valgrind-3.8.1/build/include/valgrind" || /bin/mkdir -p "/home/seryna/下载/valgrind-3.8.1/build/include/valgrind"
+ /usr/bin/install -c -m 644 memcheck.h '/home/seryna/下载/valgrind-3.8.1/build/include/valgrind'
+make[3]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/memcheck'
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/memcheck'
+Making install in memtrace
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/memtrace'
+mkdir -p ../.in_place; \
+	for f in memtrace-amd64-linux  ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../memtrace/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../memtrace/$f.dSYM ../.in_place; \
+	done
+make[3]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/memtrace'
+/bin/bash /home/seryna/下载/valgrind-3.8.1/install-sh -d /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	for f in memtrace-amd64-linux ; do \
+	  /usr/bin/install -c $f /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/bash /home/seryna/下载/valgrind-3.8.1/install-sh -d /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	done
+make[3]: 没有什么可以做的为 `install-data-am'。
+make[3]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/memtrace'
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/memtrace'
+Making install in sconvcheck
+make[2]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/sconvcheck'
+mkdir -p ../.in_place; \
+	for f in sconvcheck-amd64-linux  vgpreload_sconvcheck-amd64-linux.so  ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../sconvcheck/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../sconvcheck/$f.dSYM ../.in_place; \
+	done
+make[3]: 正在进入目录 `/home/seryna/下载/valgrind-3.8.1/sconvcheck'
+/bin/bash /home/seryna/下载/valgrind-3.8.1/install-sh -d /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	for f in sconvcheck-amd64-linux  vgpreload_sconvcheck-amd64-linux.so ; do \
+	  /usr/bin/install -c $f /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/bash /home/seryna/下载/valgrind-3.8.1/install-sh -d /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /home/seryna/下载/valgrind-3.8.1/build/lib/valgrind; \
+	done
+make[3]: 没有什么可以做的为 `install-data-am'。
+make[3]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/sconvcheck'
+make[2]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1/sconvcheck'
+make[1]:正在离开目录 `/home/seryna/下载/valgrind-3.8.1'

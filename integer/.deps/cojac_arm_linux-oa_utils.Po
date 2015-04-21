@@ -1,0 +1,31 @@
+cojac_arm_linux-oa_utils.o: oa_utils.c /usr/include/stdc-predef.h \
+ ../include/pub_tool_basics.h ../VEX/pub/libvex_basictypes.h \
+ /usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h \
+ oa_include.h ../include/pub_tool_tooliface.h \
+ ../include/pub_tool_errormgr.h ../include/pub_tool_execontext.h \
+ ../VEX/pub/libvex.h ../VEX/pub/libvex_basictypes.h \
+ ../VEX/pub/libvex_ir.h oa_utils.h
+
+/usr/include/stdc-predef.h:
+
+../include/pub_tool_basics.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+/usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h:
+
+oa_include.h:
+
+../include/pub_tool_tooliface.h:
+
+../include/pub_tool_errormgr.h:
+
+../include/pub_tool_execontext.h:
+
+../VEX/pub/libvex.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex_ir.h:
+
+oa_utils.h:

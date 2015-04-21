@@ -1,0 +1,4 @@
+libcoregrind_arm_linux_a-coredump-macho.o: m_coredump/coredump-macho.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

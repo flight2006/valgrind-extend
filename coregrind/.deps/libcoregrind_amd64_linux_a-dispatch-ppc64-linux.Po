@@ -1,0 +1,2 @@
+libcoregrind_amd64_linux_a-dispatch-ppc64-linux.o: \
+ m_dispatch/dispatch-ppc64-linux.S

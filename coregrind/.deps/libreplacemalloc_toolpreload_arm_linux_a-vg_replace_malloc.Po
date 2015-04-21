@@ -1,0 +1,69 @@
+libreplacemalloc_toolpreload_arm_linux_a-vg_replace_malloc.o: \
+ m_replacemalloc/vg_replace_malloc.c /usr/include/stdc-predef.h \
+ pub_core_basics.h ../include/pub_tool_basics.h \
+ ../VEX/pub/libvex_basictypes.h \
+ /usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h \
+ ../VEX/pub/libvex.h ../VEX/pub/libvex_basictypes.h \
+ ../VEX/pub/libvex_ir.h ../VEX/pub/libvex_guest_arm.h \
+ ../VEX/pub/libvex_emwarn.h pub_core_vki.h ../include/pub_tool_vki.h \
+ ../include/vki/vki-linux.h ../include/vki/vki-posixtypes-arm-linux.h \
+ ../include/vki/vki-arm-linux.h pub_core_clreq.h \
+ ../include/pub_tool_clreq.h ../include/valgrind.h pub_core_debuginfo.h \
+ ../include/pub_tool_debuginfo.h pub_core_mallocfree.h \
+ ../include/pub_tool_mallocfree.h pub_core_redir.h \
+ ../include/pub_tool_redir.h ../config.h pub_core_replacemalloc.h \
+ ../include/pub_tool_replacemalloc.h
+
+/usr/include/stdc-predef.h:
+
+pub_core_basics.h:
+
+../include/pub_tool_basics.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+/usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h:
+
+../VEX/pub/libvex.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex_ir.h:
+
+../VEX/pub/libvex_guest_arm.h:
+
+../VEX/pub/libvex_emwarn.h:
+
+pub_core_vki.h:
+
+../include/pub_tool_vki.h:
+
+../include/vki/vki-linux.h:
+
+../include/vki/vki-posixtypes-arm-linux.h:
+
+../include/vki/vki-arm-linux.h:
+
+pub_core_clreq.h:
+
+../include/pub_tool_clreq.h:
+
+../include/valgrind.h:
+
+pub_core_debuginfo.h:
+
+../include/pub_tool_debuginfo.h:
+
+pub_core_mallocfree.h:
+
+../include/pub_tool_mallocfree.h:
+
+pub_core_redir.h:
+
+../include/pub_tool_redir.h:
+
+../config.h:
+
+pub_core_replacemalloc.h:
+
+../include/pub_tool_replacemalloc.h:

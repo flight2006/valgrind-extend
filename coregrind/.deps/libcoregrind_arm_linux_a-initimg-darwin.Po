@@ -1,0 +1,4 @@
+libcoregrind_arm_linux_a-initimg-darwin.o: m_initimg/initimg-darwin.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

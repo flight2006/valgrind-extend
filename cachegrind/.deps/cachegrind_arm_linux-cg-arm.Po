@@ -1,0 +1,21 @@
+cachegrind_arm_linux-cg-arm.o: cg-arm.c /usr/include/stdc-predef.h \
+ ../include/pub_tool_basics.h ../VEX/pub/libvex_basictypes.h \
+ /usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h \
+ ../include/pub_tool_libcbase.h ../include/pub_tool_libcassert.h \
+ ../include/pub_tool_libcprint.h cg_arch.h
+
+/usr/include/stdc-predef.h:
+
+../include/pub_tool_basics.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+/usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h:
+
+../include/pub_tool_libcbase.h:
+
+../include/pub_tool_libcassert.h:
+
+../include/pub_tool_libcprint.h:
+
+cg_arch.h:

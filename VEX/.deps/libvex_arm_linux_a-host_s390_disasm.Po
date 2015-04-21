@@ -1,0 +1,24 @@
+libvex_arm_linux_a-host_s390_disasm.o: priv/host_s390_disasm.c \
+ /usr/include/stdc-predef.h \
+ /usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h \
+ ../VEX/pub/libvex_basictypes.h priv/main_util.h priv/main_globals.h \
+ ../VEX/pub/libvex.h ../VEX/pub/libvex_basictypes.h \
+ ../VEX/pub/libvex_ir.h priv/host_s390_disasm.h
+
+/usr/include/stdc-predef.h:
+
+/usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+priv/main_util.h:
+
+priv/main_globals.h:
+
+../VEX/pub/libvex.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex_ir.h:
+
+priv/host_s390_disasm.h:

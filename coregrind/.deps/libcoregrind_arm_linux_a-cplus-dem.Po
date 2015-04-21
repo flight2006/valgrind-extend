@@ -1,0 +1,56 @@
+libcoregrind_arm_linux_a-cplus-dem.o: m_demangle/cplus-dem.c \
+ /usr/include/stdc-predef.h m_demangle/vg_libciface.h pub_core_basics.h \
+ ../include/pub_tool_basics.h ../VEX/pub/libvex_basictypes.h \
+ /usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h \
+ ../VEX/pub/libvex.h ../VEX/pub/libvex_basictypes.h \
+ ../VEX/pub/libvex_ir.h ../VEX/pub/libvex_guest_arm.h \
+ ../VEX/pub/libvex_emwarn.h pub_core_libcbase.h \
+ ../include/pub_tool_libcbase.h pub_core_libcassert.h \
+ ../include/pub_tool_libcassert.h pub_core_libcprint.h \
+ ../include/pub_tool_libcprint.h pub_core_mallocfree.h \
+ ../include/pub_tool_mallocfree.h m_demangle/ansidecl.h \
+ m_demangle/demangle.h m_demangle/safe-ctype.h
+
+/usr/include/stdc-predef.h:
+
+m_demangle/vg_libciface.h:
+
+pub_core_basics.h:
+
+../include/pub_tool_basics.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+/usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h:
+
+../VEX/pub/libvex.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex_ir.h:
+
+../VEX/pub/libvex_guest_arm.h:
+
+../VEX/pub/libvex_emwarn.h:
+
+pub_core_libcbase.h:
+
+../include/pub_tool_libcbase.h:
+
+pub_core_libcassert.h:
+
+../include/pub_tool_libcassert.h:
+
+pub_core_libcprint.h:
+
+../include/pub_tool_libcprint.h:
+
+pub_core_mallocfree.h:
+
+../include/pub_tool_mallocfree.h:
+
+m_demangle/ansidecl.h:
+
+m_demangle/demangle.h:
+
+m_demangle/safe-ctype.h:

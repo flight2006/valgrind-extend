@@ -1,0 +1,41 @@
+vgpreload_drd_arm_linux_so-drd_qtcore_intercepts.o: \
+ drd_qtcore_intercepts.c /usr/include/stdc-predef.h /usr/include/assert.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-hard.h drd_clientreq.h drd.h \
+ ../include/valgrind.h \
+ /usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h \
+ drd_basics.h ../include/pub_tool_basics.h ../VEX/pub/libvex_basictypes.h \
+ ../include/pub_tool_redir.h ../config.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-hard.h:
+
+drd_clientreq.h:
+
+drd.h:
+
+../include/valgrind.h:
+
+/usr/lib/gcc/armv7hl-redhat-linux-gnueabi/4.8.2/include/stdarg.h:
+
+drd_basics.h:
+
+../include/pub_tool_basics.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../include/pub_tool_redir.h:
+
+../config.h:
