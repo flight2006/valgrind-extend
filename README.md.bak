@@ -8,7 +8,6 @@ Valgrind是一套Linux下，开放源代码（GPL V2）的仿真调试工具的集合，
 Valgrind被设计成非侵入式的，它直接工作于可执行文件上，因此在检查前不需要重新
 编译、连接和修改你的程序。
 项目官方地址：http://valgrind.org
-
 -----------------------------------------------------------------------------
 #Valgrind-extend插件介绍
 valgrind-extend利用valgrind作为动态插桩框架，设计了两个针对不同整数错误检测的
@@ -30,9 +29,8 @@ valgrind-extend插件目前支持基于X86和arm的linux系统，其他架构或系统暂不支持。
 1.可以将整个项目clone下，然后按照valgrind官方make，make install编译方法编译
 2.如果你已经安装官方valgarind，只需下载对应插件文件夹，然后按照官方指南修改项目主目录makefile和config文件，以及插件目录下makefile文件，然后编译安装。
 ##使用：
-像Valgrind其他功能插件一样，使用命令行valgrind --tool='toolname' ./'binary' 即可运行对应功能部件
-其中'toolname'为插件名，本项目中对应为integer和sconvcheck，'binary'为待测程序编译后的二进制文件
-
+像Valgrind其他功能插件一样，使用命令行valgrind --tool='toolname' ./'binary'
+其中'toolname'为插件名，对应为integer和sconvcheck，'binary'为待测程序编译后的二进制文件
 ------------------------------------------------------------------------------
 
 #Release notes for Valgrind
