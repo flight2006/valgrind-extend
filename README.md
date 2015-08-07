@@ -30,7 +30,15 @@ valgrind-extend插件目前支持基于X86和arm的linux系统，其他架构或系统暂不支持。
 ##安装：
 1.可以将整个项目clone下，然后按照valgrind官方make，make install编译方法编译
 
-2.如果你已经安装官方valgarind，只需下载对应插件文件夹，然后按照官方指南修改项目主目录makefile和config文件，以及插件目录下makefile文件，然后编译安装。
+2.如果你已经安装官方valgrind，只需下载对应插件文件夹，然后按照官方指南修改项目主目录Makefile.am中文件，将插件名（integer/sconvcheck）加入TOOLS或EXP_TOOLS变量，再修改configure.in文件加入/sconvcheck/Makefile和sconvcheck/tests/Makefile到AC_OUTPUT列表（integer插件同理），
+
+然后在主目录下运行命令行：
+autogen.sh
+./configure --prefix=‘pwd‘/inst
+make
+make install
+安装无错误提示即成功。
+
 ##使用：
 像Valgrind其他功能插件一样，使用命令行valgrind --tool='toolname' ./'binary' 即可运行对应功能部件
 
